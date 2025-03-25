@@ -1,0 +1,62 @@
+/* 背景圖片和頁面樣式 */
+
+  /* 標題樣式 */
+  h1 {
+    padding-left: 60px;
+    color: #ffffff;
+    font-size: 30px;
+  }
+  
+  h2 {
+    padding-left: 60px;
+    color: #976b6b;
+    font-size: 24px;
+  }
+
+  h3 {
+    padding-left: 60px;
+  }
+
+  /* 按鈕樣式 */
+  button {
+    background-color: transparent;
+    padding-left: 60px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* 表格樣式 */
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    display: table;
+    width: 80%; /* 調整表格寬度 */
+  }
+  
+  /* 表頭樣式 */
+  th {
+    background-color: #ca77775d;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  /* 表格內容樣式 */
+  td {
+    background-color: #b8b2b238;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  /* 設定每一列最大寬度和溢出顯示 */
+  .col1 { max-width: 250px; overflow: hidden; text-overflow: ellipsis; }
+  .col2 { max-width: 50px; overflow: hidden; text-overflow: ellipsis; }
+  .col3 { max-width: 100px; overflow: hidden; text-overflow: ellipsis; }
+  .col4 { max-width: 250px; overflow: hidden; text-overflow: ellipsis; }
+  .col5 { max-width: 300px; overflow: hidden; text-overflow: ellipsis; }
+  .col6 { max-width: 600px; overflow: hidden; text-overflow: ellipsis; }
+  
