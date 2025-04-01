@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
   <meta charset="UTF-8">
@@ -18,82 +18,148 @@
 </style>
 
 <body>
-  <h1>歡迎來到我的網站！</h1>
-  <h2>
-    學測成績(級分) 國文：9 英文：9 數A：10 自然：12 數B：13 社會：10 <br />
-    ( ╥﹏╥ ) <br />
-    這是一個人的網站，內容還沒想好
-  </h2>
+  <header>
+    <h1>歡迎來到我的網站！</h1>
+    <ul>
+      <li><a href="#intro">簡介</a></li>
+      <li><a href="#thematic_foldout">專題與自主學習</a></li>
+      <li><a href="https://www.instagram.com/yunchihchung/" title="IG" id="IG_link" target="_blank">聯絡我</a></li>
+    </ul>
 
-  <button onclick="toggleTable()">
-    <img src="images/AmeJam.gif" alt="Toggle Table" width="50px" height="50px" />
-  </button>
+  </header>
 
-  <table id="competitionTable">
-    <thead>
-      <tr>
-        <th class="col1">比賽名稱</th>
-        <th class="col2">等級</th>
-        <th class="col3">名次</th>
-        <th class="col4">專題名稱</th>
-        <th class="col5">貢獻值</th>
-        <th class="col6">簡述</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="col1">新北科展工程學科(一)</td>
-        <td class="col2">縣市</td>
-        <td class="col3">特優</td>
-        <td class="col4">雙層H-Type風機內層最佳扇葉類型之探究</td>
-        <td class="col5">主題發想、製作實驗模型、設計實驗、實驗報告撰寫<br />
-          貢獻值：65%</td>
-        <td class="col6">一些內容</td>
-      </tr>
-      <tr>
-        <td class="col1">2023年台灣永續能源創意實作競賽-高中職綠能創新組</td>
-        <td class="col2">全國</td>
-        <td class="col3">銅牌獎</td>
-        <td class="col4">地下水管自動抓漏</td>
-        <td class="col5">主題發想、製作實驗模型、專案領導、報告撰寫<br />
-          貢獻值：50%</td>
-        <td class="col6">一些內容</td>
-      </tr>
-      <tr>
-        <td class="col1">旺宏科學獎</td>
-        <td class="col2">全國</td>
-        <td class="col3">佳作</td>
-        <td class="col4">雙層H-Type風機之實作</td>
-        <td class="col5">主題發想、製作實驗模型、報告撰寫<br />
-          貢獻值：70%</td>
-        <td class="col6">一些內容</td>
-      </tr>
-      <tr>
-        <td class="col1">2022iSTEAM PowerTech青少年科技創作競賽全國賽-高中職單項組-三分高手</td>
-        <td class="col2">全國</td>
-        <td class="col3">冠軍</td>
-        <td class="col4">自主學習</td>
-        <td class="col5">主題發想、設計比賽用機構與造型、自主學習規劃<br />
-          貢獻值：65%</td>
-        <td class="col6">一些內容</td>
-      </tr>
-      <tr>
-        <td class="col1">2022iSTEAM PowerTech青少年科技創作競賽全國賽-高中職單項組-三分高手</td>
-        <td class="col2">全國</td>
-        <td class="col3">冠軍</td>
-        <td class="col4">自主學習</td>
-        <td class="col5">主題發想、設計比賽用機構與造型、自主學習規劃<br />
-          貢獻值：65%</td>
-        <td class="col6">一些內容</td>
-      </tr>
-    </tbody>
-  </table>
+  <main>
+    <section class="intro" id="intro">
+      <h3>簡介</h3>
+      <p>
+        星詠みです!!<br />
+        我是Yun-Chih Chung，來自台灣新北市的高中生。<br />
+        uwu <br />
+        我是一名高中生，主要參與專題製作與團隊競賽，對科技創新與實作有興趣。主要負責工作為產品構思與機構設計，並另外具有Python及Arduino專案的開發經驗，並參與校內午餐系統修改的工作。並具有多項開發用軟體的使用能力(AutoCad、Python、Arduino
+        Ide、Figma)。主要做過能源相關議題的專案，如：雙層H-Type風機設計、地下水管自動抓漏等。下方的表格有我參與過的一些競賽(點擊比賽名稱可以跳轉至個別的詳細介紹)。<br />
 
-  <h3>
-    <a href="https://www.instagram.com/yunchihchung/" title="IG" target="_blank">
-      <img src="images/icon-instagram.svg" alt="Instagram Icon">
+        <li><strong>產品構思與機構設計：</strong> 在專題製作中，我能夠根據需求構思創新的設計，並有足夠的能力設計相應的機構，具備較強的創意發想與實現能力。</li>
+        <li><strong>Python與Arduino專案開發：</strong> 具備Python編程與Arduino開發經驗，能夠將理論知識應用於實際專案中。</li>
+        <li><strong>團隊協作與問題解決：</strong> 在團隊競賽中，我通常負責統整專案架構，能夠有效與隊友協作，共同解決專案中的問題，確保專案順利完成。</li>
+
+      </p>
+      <button onclick="toggleTable()">
+        <img src="images/AmeJam.gif" alt="Toggle Table" width="50px" height="50px" />
+      </button>
+
+      <table id="competitionTable">
+        <thead>
+          <tr>
+            <th class="col1">比賽名稱</th>
+            <th class="col2">等級</th>
+            <th class="col3">名次</th>
+            <th class="col4">專題名稱</th>
+            <th class="col5">貢獻值</th>
+            <th class="col6">關鍵字</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col1">新北科展工程學科(一)</td>
+            <td class="col2">縣市</td>
+            <td class="col3">特優</td>
+            <td class="col4">雙層H-Type風機內層最佳扇葉類型之探究</td>
+            <td class="col5">主題發想、製作實驗模型、設計實驗、實驗報告撰寫<br />
+              貢獻值：65%</td>
+            <td class="col6">垂直軸風機、J型扇葉、綠能</td>
+          </tr>
+          <tr>
+            <td class="col1">2023年台灣永續能源創意實作競賽-高中職綠能創新組</td>
+            <td class="col2">全國</td>
+            <td class="col3">銅牌獎</td>
+            <td class="col4">地下水管自動抓漏</td>
+            <td class="col5">主題發想、製作實驗模型、專案領導、報告撰寫<br />
+              貢獻值：50%</td>
+            <td class="col6">AIoT、遠端自動偵漏、機器學習</td>
+          </tr>
+          <tr>
+            <td class="col1">旺宏科學獎</td>
+            <td class="col2">全國</td>
+            <td class="col3">佳作</td>
+            <td class="col4">雙層H-Type風機之實作</td>
+            <td class="col5">主題發想、製作實驗模型、報告撰寫<br />
+              貢獻值：70%</td>
+            <td class="col6">垂直軸風機、J型扇葉、綠能</td>
+          </tr>
+          <tr>
+            <td class="col1">2022iSTEAM PowerTech青少年科技創作競賽全國賽-高中職單項組-三分高手</td>
+            <td class="col2">全國</td>
+            <td class="col3">冠軍</td>
+            <td class="col4">自主學習</td>
+            <td class="col5">主題發想、設計比賽用機構與造型、自主學習規劃<br />
+              貢獻值：65%</td>
+            <td class="col6">社會議題、時間規劃、設計思考</td>
+          </tr>
+          <tr>
+            <td class="col1">網頁實作</td>
+            <td class="col2">、、</td>
+            <td class="col3">、、</td>
+            <td class="col4">自主學習</td>
+            <td class="col5">整體網頁開發及設計<br />
+              貢獻值：100%</td>
+            <td class="col6">html、css、js、自主學習規劃</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="thematic_foldout" id="thematic_foldout">
+      <h3>專題與自主學習</h3>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">新北科展工程學科(一)</div>
+          <div class="accordion-content">
+            <div class="text">
+              本次科展我們設計了一款雙層H-Type垂直軸風機，並研究最適合作為內層扇葉的類型，以降低啟動風速並提升性能。透過資料蒐集與模型製作，我們選擇對稱翼型、非對稱翼型及J型葉片作為內層扇葉進行測試，最終發現J型葉片在啟動風速及動能表現上最優。比賽過程中，我們克服了文獻搜尋困難，透過跨語言研究提升專業知識，並在競賽交流中獲得寶貴經驗。最終，我們在新北科展獲得特優，並持續改良設計，為後續競賽(旺宏科學獎)做準備。<br />
+              <a href="https://drive.google.com/drive/u/0/folders/1UT4xBjkzcrnpV9DorIM6Y_t1G27SEPyD"
+                target="_blank">更多資訊</a>
+            </div>
+            <div class="images">
+              <img src="images/image1.png" alt="image1">
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">2023年台灣永續能源創意實作競賽-高中職綠能創新組</div>
+          <div class="accordion-content">
+            <div class="text">我們開發了一套機器學習與頻譜分析系統，用於自動偵測與定位地下水管破裂。系統透過聲音感測器與 ESP32 傳輸數據，並利用 AI
+              分析聲紋變化來判斷漏水情況。我負責計劃書撰寫、感測器數據整理、資料回傳開發，並協助AI 模型訓練。雖然因資源受限影響準確度，但我們仍獲得銅牌獎。這次比賽讓我學習到能源技術與 AI
+              應用，未來希望進一步優化技術，提升偵測效能。 <br />
+              <a href="https://drive.google.com/drive/u/0/folders/1vX4GxRu6UJ1pMCrUh6kh0fI_BlOPbWje"
+                target="_blank">更多資訊</a>
+            </div>
+            <div class="images">
+              <img src="images/image2.jpg" alt="image2">
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">折頁 3</div>
+          <div class="accordion-content">
+            <div class="text">此專案是延續科展成果，制定後續研究計畫，對原先設計出來的雙層H-Type風機做更加深入的效能分析，進行內外扇葉的比例配置、發電實驗、與市面流通機型比對。<br />
+              <a href="https://drive.google.com/drive/u/0/folders/1aJlclFLV3rzqIcBQpQqkFPtfscTizazn"
+                target="_blank">更多資訊 </a>
+            </div>
+            <div class="images">
+              <img src="images/image3.png" alt="image3">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://www.instagram.com/yunchihchung/" title="IG" id="IG_link" target="_blank">
+      <img src="images/icon-instagram.svg" alt="Instagram_Icon" id="IG_icon">
     </a>
-  </h3>
+  </footer>
 
   <script src="js/script.js"></script> <!-- 連結到外部JavaScript -->
 </body>
