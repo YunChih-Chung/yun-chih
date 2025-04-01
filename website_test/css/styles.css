@@ -1,62 +1,261 @@
-/* 背景圖片和頁面樣式 */
+* {
+  padding: 0;
+  margin: 0;
+}
 
-  /* 標題樣式 */
-  h1 {
-    padding-left: 60px;
-    color: #ffffff;
-    font-size: 30px;
-  }
-  
-  h2 {
-    padding-left: 60px;
-    color: #976b6b;
-    font-size: 24px;
-  }
+/* header */
 
-  h3 {
-    padding-left: 60px;
-  }
+header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background-color: #183340e1;
+}
 
-  /* 按鈕樣式 */
-  button {
-    background-color: transparent;
-    padding-left: 60px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* 表格樣式 */
-  table {
-    border-collapse: collapse;
-    margin: 0 auto;
-    display: table;
-    width: 80%; /* 調整表格寬度 */
-  }
-  
-  /* 表頭樣式 */
-  th {
-    background-color: #ca77775d;
-    color: #ffffff;
-    font-size: 20px;
-    padding: 12px;
-    text-align: center;
-  }
-  
-  /* 表格內容樣式 */
-  td {
-    background-color: #b8b2b238;
-    color: #ffffff;
-    border: none;
-    font-size: 20px;
-    padding: 12px;
-    text-align: left;
-  }
-  
-  /* 設定每一列最大寬度和溢出顯示 */
-  .col1 { max-width: 250px; overflow: hidden; text-overflow: ellipsis; }
-  .col2 { max-width: 50px; overflow: hidden; text-overflow: ellipsis; }
-  .col3 { max-width: 100px; overflow: hidden; text-overflow: ellipsis; }
-  .col4 { max-width: 250px; overflow: hidden; text-overflow: ellipsis; }
-  .col5 { max-width: 300px; overflow: hidden; text-overflow: ellipsis; }
-  .col6 { max-width: 600px; overflow: hidden; text-overflow: ellipsis; }
-  
+h1 {
+  font-size: 25px;
+  color: #ffffff;
+  position: absolute;
+  left: 60px;
+  line-height: 60px;
+}
+
+header ul {
+  position: absolute;
+  right: 60px;
+  line-height: 60px;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 1vw;
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header a:hover {
+  color: #ca7777;
+}
+
+/* main */
+
+.intro {
+  padding: 60px;
+  /* 確保內文不會被 header 蓋住 */
+}
+
+body {
+  margin-bottom: 200px;
+  /* 確保內文不會被 footer 蓋住 */
+}
+
+.intro p {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  color: #bc8888;
+  font-size: 16px;
+  width: 70%;
+  line-height: 26px;
+  text-align: justify;
+}
+
+.intro li {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  text-align: justify;
+  color: #f1e3e3;
+  padding-left: 30px;
+  width: 50%;
+}
+
+h3 {
+  font-size: 30px;
+  padding: 20px;
+  color: #f1e3e3;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* 按鈕樣式 */
+.intro button {
+  position: relative;
+  left: 10%;
+  transform: translateX(-10%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* 表格樣式 */
+.intro table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  display: table;
+  width: 70%;
+  /* 調整表格寬度 */
+}
+
+/* 表頭樣式 */
+.intro th {
+  background-color: #ca77775d;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px;
+  text-align: center;
+}
+
+/* 表格內容樣式 */
+.intro td {
+  background-color: #b8b2b238;
+  color: #ffffff;
+  border: none;
+  font-size: 15px;
+  padding: 8px;
+  text-align: left;
+}
+
+/* 每一列最大寬度和溢出 */
+.col1 {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.col2 {
+  max-width: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.col3 {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.col4 {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.col5 {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.col6 {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* 摺頁容器樣式 */
+.accordion {
+  width: 62.5%;
+  margin: 0 auto;
+}
+
+/* 摺頁項目樣式 */
+.accordion-item {
+  background: rgba(189, 186, 186, 0.614);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* 摺頁標題樣式 */
+.accordion-header {
+  background: #990f0f6c;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* 摺頁標題的懸停效果 */
+.accordion-header:hover {
+  background: #0c659d77;
+}
+
+/* 摺頁內容的樣式（默認隱藏） */
+.accordion-content {
+  padding: 15px;
+  background: white;
+  overflow: hidden;
+  max-height: 0px;
+  opacity: 0;
+  display: none;
+  flex-direction: row;
+  align-items: top;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* 摺頁開啟，顯示內容 */
+.active .accordion-content {
+  max-height: 5000px;
+  opacity: 1;
+  display: flex;
+}
+
+.text {
+  width: 50%;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: justify;
+}
+
+.text a {
+  color: #117cb1;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.text a:hover {
+  color: #811818;
+}
+
+.images {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* footer 樣式 */
+footer {
+  background-color: #183340e1;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+#IG_icon {
+  width: 35px;
+  height: auto;
+  position: relative;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+}
