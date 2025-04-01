@@ -45,12 +45,11 @@ header a:hover {
 
 .intro {
   padding: 60px;
-  /* 確保內文不會被 header 蓋住 */
 }
 
 body {
   margin-bottom: 200px;
-  /* 確保內文不會被 footer 蓋住 */
+
 }
 
 .intro p {
@@ -88,11 +87,16 @@ h3 {
 /* 按鈕樣式 */
 .intro button {
   position: relative;
-  left: 10%;
-  transform: translateX(-10%);
+  left: 50%;
+  transform: translateX(-50%);
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+#table_button {
+  width: 50px;
+  height: 50px;
 }
 
 /* 表格樣式 */
